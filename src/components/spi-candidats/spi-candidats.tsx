@@ -17,7 +17,7 @@ export class SpiCandidats {
     @Method()
     load () {
     
-      return fetch('https://dosispi.cleverapps.io/candidats').then(rsp => {
+      return fetch('https://api-dosispi.cleverapps.io/candidats').then(rsp => {
         return   rsp.json();
     
       }).then(data => {
